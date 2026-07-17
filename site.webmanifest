@@ -1,0 +1,28 @@
+{
+  "name": "Elite Global Properties L.L.C",
+  "short_name": "Elite Global Properties",
+  "lang": "en",
+  "dir": "ltr",
+  "description": "Private Dubai property advisory: off-plan villas, townhouses and branded apartments.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f7f3ee",
+  "theme_color": "#0b0d12",
+  "icons": [
+    {
+      "src": "/assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
