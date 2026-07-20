@@ -85,7 +85,8 @@ export default async function handler(req, res) {
         },
         body: JSON.stringify({
           from: process.env.LEAD_FROM_EMAIL || 'Elite Global Website <onboarding@resend.dev>',
-          to: [process.env.LEAD_TO_EMAIL],
+          // LEAD_TO_EMAIL may be a comma-separated list; every address receives the lead.
+          to: process.env.LEAD_TO_EMAIL.split(',').map((e) => e.trim()).filter(Boolean),
           subject: `New website lead: ${name} (${phone})`,
           html: `<h2 style="font-family:Georgia,serif">New enquiry from eliteglobal-properties.com</h2><table style="font:14px/1.6 Arial">${rows}</table>`,
         }),
