@@ -95,6 +95,27 @@
         .catch(function(){
           if(btn){ btn.disabled=false; btn.textContent=btn._label; }
           if(errBox){ errBox.hidden=false; errBox.setAttribute('tabindex','-1'); errBox.focus(); }
+          // Delivery-safety net: if the server cannot deliver the lead (e.g. the
+          // email/webhook channel is not configured), hand the enquiry off to
+          // WhatsApp pre-filled with what the visitor typed, so no lead is lost.
+          // The number is read from the error box's wa.me link, so it stays in
+          // sync sitewide and per-locale without hardcoding it here.
+          try{
+            var waHref=(errBox&&errBox.querySelector('a[href*="wa.me"]')||{}).href||'';
+            var num=(waHref.match(/wa\.me\/(\d+)/)||[])[1];
+            if(num){
+              var name=(fd.get('name')||'').toString().trim();
+              var phone=(fd.get('phone')||'').toString().trim();
+              var budget=(fd.get('budget')||'').toString().trim();
+              var timeline=(fd.get('timeline')||'').toString().trim();
+              var lines=['Hi Elite Global, I just submitted an enquiry on your website and would like the current Dubai price list and floor plans.'];
+              if(name) lines.push('Name: '+name);
+              if(phone) lines.push('Phone: '+phone);
+              if(budget) lines.push('Budget: '+budget);
+              if(timeline) lines.push('Timeline: '+timeline);
+              window.open('https://wa.me/'+num+'?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');
+            }
+          }catch(_){}
         });
     });
   });
