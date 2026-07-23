@@ -3,17 +3,6 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.eliteglobal-properties.com"
-        }
-      ],
-      "destination": "https://eliteglobal-properties.com/$1",
-      "statusCode": 301
-    },
-    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true
