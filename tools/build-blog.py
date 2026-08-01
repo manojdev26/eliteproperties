@@ -245,7 +245,7 @@ def load_shell():
     header = re.sub(r'href="/(fr|de|ru|ar)/about\.html"',
                     lambda m: 'href="/%s/"' % m.group(1), header)
     header = header.replace('<a href="/about.html" hreflang="en" aria-current="true" lang="en">EN</a>',
-                            '<a href="/blog/" hreflang="en" aria-current="true" lang="en">EN</a>')
+                            '<a href="/blog" hreflang="en" aria-current="true" lang="en">EN</a>')
     enquire = enquire.replace('data-page="about"', 'data-page="blog"')
 
     return style, header, enquire, tail
@@ -396,7 +396,7 @@ def build():
             "@type": "BreadcrumbList",
             "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
-                {"@type": "ListItem", "position": 2, "name": "Blog", "item": SITE + "/blog/"},
+                {"@type": "ListItem", "position": 2, "name": "Blog", "item": SITE + "/blog"},
                 {"@type": "ListItem", "position": 3, "name": h1, "item": canon},
             ],
         }, ensure_ascii=False)
@@ -418,7 +418,7 @@ def build():
 
         hero = f"""<section class="hero page-hero"><div class="hero-bg"><img src="/assets/img/projects/{img}.webp" srcset="/assets/img/projects/{img}-sm.webp 760w, /assets/img/projects/{img}.webp 1400w" sizes="100vw" alt="{html.escape(p['alt'], quote=True)}" width="1400" height="875" fetchpriority="high" decoding="async"></div>
     <div class="wrap"><div class="page-hero-in reveal">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a></nav>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/blog">Blog</a></nav>
       <h1>{inline(h1)}</h1>
       <p class="lead">{html.escape(p['desc'])}</p>
       <div class="post-meta"><span>Elite Global Properties</span><span class="dot"></span><span>{html.escape(p['read'])} read</span></div>
@@ -441,7 +441,7 @@ def build():
             faq_html,
             cta_block,
             '<section class="section"><div class="wrap prose"><div class="post-nav">'
-            '<a href="/blog/">Back to all articles</a>'
+            '<a href="/blog">Back to all articles</a>'
             '<a href="/projects.html">See current off-plan projects</a>'
             '</div></div></section>',
             enquire,
@@ -466,7 +466,7 @@ def build():
   </div>
 </article>""")
 
-    list_canon = SITE + "/blog/"
+    list_canon = SITE + "/blog"
     list_ld = json.dumps({
         "@context": "https://schema.org",
         "@type": "Blog",
@@ -533,7 +533,7 @@ def update_sitemap(posts):
     date = re.search(r"<lastmod>([^<]+)</lastmod>", xml)
     date = date.group(1) if date else "2026-08-01"
 
-    entries = ['\n<url><loc>%s/blog/</loc><lastmod>%s</lastmod>'
+    entries = ['\n<url><loc>%s/blog</loc><lastmod>%s</lastmod>'
                '<changefreq>weekly</changefreq><priority>0.7</priority></url>' % (SITE, date)]
     for p in posts:
         entries.append('\n<url><loc>%s/blog/%s.html</loc><lastmod>%s</lastmod>'
