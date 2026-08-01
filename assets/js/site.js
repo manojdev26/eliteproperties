@@ -24,7 +24,12 @@
   var body=document.body;
   var drawer=document.querySelector('.drawer');
   var menuTrigger=null;
-  function openMenu(btn){ body.classList.add('menu-open'); if(drawer){ drawer.removeAttribute('inert');
+  function closeLangSwitches(){ document.querySelectorAll('details.lang-switch[open]').forEach(function(d){
+    var hadFocus=d.contains(document.activeElement);
+    d.removeAttribute('open');
+    if(hadFocus){ var s=d.querySelector('summary'); if(s) s.focus(); }
+  }); }
+  function openMenu(btn){ closeLangSwitches(); body.classList.add('menu-open'); if(drawer){ drawer.removeAttribute('inert');
     var f=drawer.querySelector('a[href],button'); if(f) setTimeout(function(){f.focus();},50); } menuTrigger=btn||menuTrigger; }
   function closeMenu(){ if(!body.classList.contains('menu-open')) return; body.classList.remove('menu-open');
     if(drawer) drawer.setAttribute('inert','');
@@ -32,13 +37,28 @@
   document.querySelectorAll('[data-menu-open]').forEach(function(b){b.addEventListener('click',function(){openMenu(b);});});
   document.querySelectorAll('[data-menu-close]').forEach(function(b){b.addEventListener('click',closeMenu);});
   document.querySelectorAll('.drawer nav a').forEach(function(a){a.addEventListener('click',closeMenu);});
-  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeMenu(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ closeMenu(); closeLangSwitches(); } });
   document.addEventListener('keydown',function(e){ // focus trap within drawer while open
     if(e.key!=='Tab'||!body.classList.contains('menu-open')||!drawer) return;
     var f=drawer.querySelectorAll('a[href],button'); if(!f.length) return;
     var first=f[0], last=f[f.length-1];
     if(e.shiftKey && document.activeElement===first){ e.preventDefault(); last.focus(); }
     else if(!e.shiftKey && document.activeElement===last){ e.preventDefault(); first.focus(); }
+  });
+
+  /* --- Language switcher (details/summary): close on outside click, and close
+     the mobile drawer if it opens (avoid two floating panels at once) --- */
+  document.addEventListener('click',function(e){
+    document.querySelectorAll('details.lang-switch[open]').forEach(function(d){ if(!d.contains(e.target)) d.removeAttribute('open'); });
+  });
+  document.querySelectorAll('details.lang-switch').forEach(function(d){
+    // Tabbing past the last link with no other close trigger would otherwise
+    // leave the panel visibly open; close once focus leaves the widget entirely.
+    d.addEventListener('focusout',function(e){
+      if(!d.open) return;
+      setTimeout(function(){ if(!d.contains(document.activeElement)) d.removeAttribute('open'); },0);
+    });
+    d.addEventListener('toggle',function(){ if(d.open) closeMenu(); });
   });
 
   /* --- Reveal on scroll (with failsafe so content is never left invisible) --- */
