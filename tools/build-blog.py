@@ -527,7 +527,9 @@ def update_sitemap(posts):
     xml = open(path, encoding="utf-8").read()
 
     # Drop any previously generated blog entries so reruns stay idempotent.
-    xml = re.sub(r"\s*<url>\s*<loc>%s/blog/[^<]*</loc>.*?</url>" % re.escape(SITE),
+    # Strip both the listing entry (/blog, no extension) and the article
+    # entries (/blog/<slug>.html) so reruns stay idempotent.
+    xml = re.sub(r"\s*<url>\s*<loc>%s/blog(?:/[^<]*)?</loc>.*?</url>" % re.escape(SITE),
                  "", xml, flags=re.S)
 
     date = re.search(r"<lastmod>([^<]+)</lastmod>", xml)
