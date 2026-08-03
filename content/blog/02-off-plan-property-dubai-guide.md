@@ -136,11 +136,14 @@ Service charges generally begin once the property is handed over and the communi
 ### Is off-plan a good choice for a first Dubai purchase?
 It can be, provided your horizon matches the build timeline and you have checked the developer and the SPA. If you need certainty or income quickly, a completed property is usually the better fit.
 
+
+If you are working through the detail, our guide to [how to calculate rental yield](https://eliteglobal-properties.com/blog/dubai-rental-yield-roi-guide.html) is the natural next read, and you can see the full [off-plan property in Dubai](/off-plan-property-in-dubai.html) we currently advise on.
+
 ## Get the Current Price List
 
 Off-plan rewards buyers who ask the unglamorous questions. That is the work we do before you commit anything.
 
-Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai. We give overseas and resident buyers private, direct-from-developer access to off-plan villas, townhouses and branded apartments across Dubai and Abu Dhabi.
+Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a [private, direct-from-developer route into Dubai property](https://eliteglobal-properties.com/). We give overseas and resident buyers private, direct-from-developer access to off-plan villas, townhouses and branded apartments across Dubai and Abu Dhabi.
 
 Full price lists, payment plans and availability change constantly, so we share current, developer-confirmed figures on request. Tell us your budget and your goal and we will reply with a tailored shortlist, usually the same day. If you are weighing returns as well as entry price, our [Dubai real estate investment guide](https://eliteglobal-properties.com/dubai-real-estate-investment.html) is the natural next read.
 

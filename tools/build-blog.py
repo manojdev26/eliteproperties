@@ -42,6 +42,73 @@ HERO = {
 }
 
 
+# Social copy, distinct from the search title/description. Open Graph is
+# phrased for a link preview; Twitter is shorter and more direct. Keeping all
+# three different means each surface gets copy written for it.
+SOCIAL = {
+    "buy-property-in-dubai-as-a-foreigner": {
+        "og_title": "Yes, foreigners can own property in Dubai outright",
+        "og_desc": "Freehold ownership, designated areas, and a title deed in your own name. What overseas buyers actually need to know before they commit.",
+        "tw_title": "Can foreigners buy property in Dubai?",
+        "tw_desc": "Short answer: yes, freehold, in your own name. Here is where, and what to check first.",
+    },
+    "off-plan-property-dubai-guide": {
+        "og_title": "Off-plan in Dubai: the case for it, and the risks",
+        "og_desc": "Lower entry prices and staged payment plans, set against construction timing and delivery risk. A candid look from a RERA-registered brokerage.",
+        "tw_title": "Off-plan property in Dubai, explained",
+        "tw_desc": "Why buyers choose it, what escrow protects, and when a finished unit is the better call.",
+    },
+    "uae-golden-visa-property-investment": {
+        "og_title": "The Golden Visa property route, without the myths",
+        "og_desc": "What actually qualifies, how family inclusion works, and why an off-plan purchase and a residency timeline are not the same thing.",
+        "tw_title": "UAE Golden Visa through property",
+        "tw_desc": "It is a residence visa, not citizenship. Here is what qualifies and what to verify.",
+    },
+    "dubai-rental-yield-roi-guide": {
+        "og_title": "Most Dubai yield figures you see are gross",
+        "og_desc": "Service charges, voids and management fees decide what you actually keep. The net yield calculation, worked through line by line.",
+        "tw_title": "How to calculate Dubai rental yield properly",
+        "tw_desc": "Gross yield flatters. Net yield is what you bank. Here is the arithmetic.",
+    },
+    "best-areas-to-buy-property-in-dubai": {
+        "og_title": "There is no best area in Dubai, only the right one",
+        "og_desc": "Palm Jumeirah, Dubai Hills, Business Bay, The Oasis and the emerging waterfront. Which buyer each community actually suits, and the trade-offs.",
+        "tw_title": "Where to buy in Dubai, by buyer type",
+        "tw_desc": "Beachfront, family, central or emerging. Match the address to your goal first.",
+    },
+    "branded-residences-dubai": {
+        "og_title": "Branded residences: what the premium actually buys",
+        "og_desc": "Enforced specification, hotel-standard service and a name that travels, weighed against higher service charges and what that does to net yield.",
+        "tw_title": "Are branded residences worth it in Dubai?",
+        "tw_desc": "Sometimes. It depends on whether you will use what you are paying for.",
+    },
+    "cost-of-buying-property-in-dubai": {
+        "og_title": "The Dubai purchase costs nobody totals up front",
+        "og_desc": "DLD registration, Oqood, trustee fees and the annual service charges that follow. A budgeting framework you can ask to be filled in writing.",
+        "tw_title": "What buying in Dubai really costs",
+        "tw_desc": "Beyond the price: registration, trustee and admin fees, plus what recurs every year.",
+    },
+    "villa-or-apartment-dubai": {
+        "og_title": "Villa or apartment? It is a purpose question",
+        "og_desc": "Yield, tenant profile, service charges and maintenance all pull in different directions. How to decide before you start comparing floor plans.",
+        "tw_title": "Villa or apartment in Dubai?",
+        "tw_desc": "Apartments win on yield and liquidity. Villas win on space and tenancy length.",
+    },
+    "buying-dubai-property-from-abroad": {
+        "og_title": "Buying in Dubai from the UK or Europe, remotely",
+        "og_desc": "Virtual viewings, remote reservation, escrow payments and handover. How overseas buyers complete a purchase without flying in.",
+        "tw_title": "Buy Dubai property without flying in",
+        "tw_desc": "View, reserve, pay and complete remotely. Here is the process, and what to verify.",
+    },
+    "verify-dubai-property-developer": {
+        "og_title": "Twenty minutes of checks before you transfer anything",
+        "og_desc": "ORN, BRN, Trakheesi permit and the escrow account named in your SPA. The verification list we would want our own family to follow.",
+        "tw_title": "Verify before you pay in Dubai",
+        "tw_desc": "Check the broker, the permit and the escrow account. Never pay a personal account.",
+    },
+}
+
+
 # --------------------------------------------------------------------------
 # Markdown article parsing
 # --------------------------------------------------------------------------
@@ -298,15 +365,26 @@ EXTRA_CSS = """
 """
 
 
-def head_block(title, desc, canon, og_img, og_alt, kind, extra_ld):
-    """Head tags. Mirrors about.html but with per-article metadata."""
+def head_block(title, desc, canon, og_img, og_alt, kind, extra_ld,
+               og_title=None, og_desc=None, tw_title=None, tw_desc=None):
+    """
+    Head tags. Mirrors about.html but with per-article metadata.
+
+    Search, Open Graph and Twitter each get their own title and description.
+    Search copy leads with the keyword; social copy is written to earn a tap
+    in a feed, so duplicating one into the other wastes both.
+    """
+    og_title = og_title or title
+    og_desc = og_desc or desc
+    tw_title = tw_title or og_title
+    tw_desc = tw_desc or og_desc
     return f"""<title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc, quote=True)}">
 <link rel="canonical" href="{canon}">
 <meta property="og:type" content="{kind}">
 <meta property="og:site_name" content="Elite Global Properties">
-<meta property="og:title" content="{html.escape(title, quote=True)}">
-<meta property="og:description" content="{html.escape(desc, quote=True)}">
+<meta property="og:title" content="{html.escape(og_title, quote=True)}">
+<meta property="og:description" content="{html.escape(og_desc, quote=True)}">
 <meta property="og:url" content="{canon}">
 <meta property="og:image" content="{SITE}/assets/img/projects/{og_img}.jpg">
 <meta property="og:image:width" content="1200">
@@ -314,7 +392,10 @@ def head_block(title, desc, canon, og_img, og_alt, kind, extra_ld):
 <meta property="og:image:alt" content="{html.escape(og_alt, quote=True)}">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{html.escape(tw_title, quote=True)}">
+<meta name="twitter:description" content="{html.escape(tw_desc, quote=True)}">
 <meta name="twitter:image" content="{SITE}/assets/img/projects/{og_img}.jpg">
+<meta name="twitter:image:alt" content="{html.escape(og_alt, quote=True)}">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
@@ -413,8 +494,13 @@ def build():
             }, ensure_ascii=False)
             lds.append(json_ld(faq_ld))
 
+        soc = SOCIAL.get(p["slug"], {})
         head = head_block(p["title"], p["desc"], canon, img, p["alt"],
-                          "article", "\n".join(lds))
+                          "article", "\n".join(lds),
+                          og_title=soc.get("og_title"),
+                          og_desc=soc.get("og_desc"),
+                          tw_title=soc.get("tw_title"),
+                          tw_desc=soc.get("tw_desc"))
 
         hero = f"""<section class="hero page-hero"><div class="hero-bg"><img src="/assets/img/projects/{img}.webp" srcset="/assets/img/projects/{img}-sm.webp 760w, /assets/img/projects/{img}.webp 1400w" sizes="100vw" alt="{html.escape(p['alt'], quote=True)}" width="1400" height="875" fetchpriority="high" decoding="async"></div>
     <div class="wrap"><div class="page-hero-in reveal">
@@ -494,7 +580,11 @@ def build():
         "Dubai Property Insights & Buying Guides | Elite Global",
         "Guides on buying property in Dubai, off-plan investment, the Golden Visa, yields and verification, from a RERA-registered Dubai brokerage.",
         list_canon, "palace-hillside", "Elite Global Properties, Dubai property",
-        "website", "\n".join([org_ld, json_ld(list_ld), json_ld(crumb_ld)]))
+        "website", "\n".join([org_ld, json_ld(list_ld), json_ld(crumb_ld)]),
+        og_title="Dubai property, explained by the people who sell it",
+        og_desc="Ten practical guides on buying, investing and owning in Dubai and Abu Dhabi. Written by our advisory team, with the numbers before the brochure.",
+        tw_title="Dubai property, explained",
+        tw_desc="Practical guides on buying, yields, the Golden Visa and how to verify who you are dealing with.")
 
     trust = re.search(r'<div class="trust-row">.*?</div></div>', src_full, re.S).group(0)
 

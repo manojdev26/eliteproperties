@@ -75,13 +75,13 @@ If family residency is your objective, tell your advisor at the first conversati
 
 Residency-linked property is exactly the area where overstated claims appear, so a short verification list is worth keeping.
 
-1. **Check the brokerage.** Verify the firm on the [Dubai Land Department](https://dubailand.gov.ae/) licensed-brokers register. Our own RERA ORN, DED trade licence and Trakheesi permit numbers are published on our [about page](https://eliteglobal-properties.com/about.html).
+1. **Check the brokerage.** Verify the firm on the Dubai Land Department licensed-brokers register. Our own RERA ORN, DED trade licence and Trakheesi permit numbers are published on our [about page](https://eliteglobal-properties.com/about.html).
 2. **Confirm current requirements.** Ask for the requirement as it stands now, applied to your specific property, not a general figure from an article.
 3. **Confirm eligibility for the actual residence.** Not the development. The unit.
 4. **Understand the timeline.** Especially if you are buying off-plan and residency is time-sensitive.
 5. **Never pay a personal account.** Off-plan payments go only into the developer's RERA-regulated escrow account named in your Sale and Purchase Agreement.
 
-Official guidance on residency and visa services is published through the [UAE Government portal](https://u.ae/), which is the right reference point for current rules.
+Official guidance on residency and visa services is published through the UAE Government portal, which is the right reference point for current rules.
 
 ## Choosing a Property That Serves Both Goals
 
@@ -116,11 +116,14 @@ No. It is a long-term renewable residence visa. The UAE does not offer citizensh
 ### What happens if I sell the property?
 Residency granted through property investment is linked to continued ownership of a qualifying asset. Selling without a replacement qualifying investment affects the visa's basis, so plan any sale with that in mind.
 
+
+If you are working through the detail, our guide to [the full cost of buying](https://eliteglobal-properties.com/blog/cost-of-buying-property-in-dubai.html) is the natural next read, and you can see the full [Dubai real estate investment](/dubai-real-estate-investment.html) we currently advise on.
+
 ## Speak to a Licensed Advisor
 
 Residency is too important to build on a figure from a forum post. It is worth confirming against your actual purchase, in writing, before money moves.
 
-Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, working directly with developers including Beyond, Emaar, Sobha Realty and Aldar. Advisory is available in English, French, Russian, Arabic and German.
+Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a [private, direct-from-developer route into Dubai property](https://eliteglobal-properties.com/). working directly with developers including Beyond, Emaar, Sobha Realty and Aldar. Advisory is available in English, French, Russian, Arabic and German.
 
 Tell us your budget, your timeline and whether residency is your priority. We will confirm eligibility for the residences that fit and reply with a tailored shortlist, current prices and payment plans, usually the same day.
 

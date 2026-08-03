@@ -42,11 +42,14 @@ Any legitimate Dubai brokerage operates under a set of registrations, and they s
 
 We publish all of these on our [about page](https://eliteglobal-properties.com/about.html) alongside our registered office, Office 1609-23, The Binary Tower by Omniyat, Business Bay, and Dubai Chamber number 600989. Any brokerage that treats these as confidential is not one to work with.
 
+
+If you are working through the detail, our guide to [how off-plan works end to end](https://eliteglobal-properties.com/blog/off-plan-property-dubai-guide.html) is the natural next read, and you can see the full [off-plan property in Dubai](/off-plan-property-in-dubai.html) we currently advise on.
+
 ## Running the Checks
 
 ### 1. Verify the brokerage
 
-Look up the firm on the [Dubai Land Department](https://dubailand.gov.ae/) licensed-brokers register using its ORN. Confirm the legal name matches the entity on your paperwork exactly. "Elite Global Properties L.L.C" and a similarly named company are not the same thing, and impersonation of established brands is a known tactic.
+Look up the firm on the Dubai Land Department licensed-brokers register using its ORN. Confirm the legal name matches the entity on your paperwork exactly. "Elite Global Properties L.L.C" and a similarly named company are not the same thing, and impersonation of established brands is a known tactic.
 
 ### 2. Verify the individual agent
 
@@ -147,7 +150,7 @@ The regulatory framework, including escrow and permit requirements, is designed 
 
 We would rather you check our credentials before the first conversation than take our word for anything. Our RERA ORN is 49515, our DED trade licence is 1480505, and our Trakheesi permit is 1036983257. All of them are verifiable on official registers.
 
-Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a private, verified route into Dubai property, from the first consultation to handover. Advisory is available in English, French, Russian, Arabic and German.
+Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a [private, direct-from-developer route into Dubai property](https://eliteglobal-properties.com/). giving overseas and resident buyers a private, verified route into Dubai property, from the first consultation to handover. Advisory is available in English, French, Russian, Arabic and German.
 
 Once you have checked, tell us your budget and your goal. We reply with a tailored shortlist, current developer-confirmed prices and payment plans, usually the same day.
 

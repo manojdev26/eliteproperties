@@ -86,7 +86,7 @@ This is the part we ask every buyer to read carefully, because it is where the r
 
 For off-plan purchases, payments go only into the developer's RERA-regulated escrow account, named in your Sale and Purchase Agreement. That account is regulated, and funds are released to the developer against construction progress rather than all at once.
 
-A licensed brokerage will never ask you to transfer funds to a personal account. If anyone does, stop and verify before you pay. You can independently check a brokerage on the [Dubai Land Department](https://dubailand.gov.ae/) licensed-brokers register, and you can check our own credentials on our [about page](https://eliteglobal-properties.com/about.html), where our RERA ORN, DED trade licence and Trakheesi permit numbers are published in full.
+A licensed brokerage will never ask you to transfer funds to a personal account. If anyone does, stop and verify before you pay. You can independently check a brokerage on the Dubai Land Department licensed-brokers register, and you can check our own credentials on our [about page](https://eliteglobal-properties.com/about.html), where our RERA ORN, DED trade licence and Trakheesi permit numbers are published in full.
 
 ## Ownership and Residency
 
@@ -131,11 +131,14 @@ Yes. Freehold owners can lease their property. Short-term letting requires the a
 ### How long does the purchase take?
 An off-plan reservation can be completed in days. The payment plan then runs to handover, which is set by the project's construction schedule and stated in your SPA.
 
+
+If you are working through the detail, our guide to [how off-plan purchases work](https://eliteglobal-properties.com/blog/off-plan-property-dubai-guide.html) is the natural next read, and you can see the full [buying property in Dubai](/buy-property-in-dubai.html) we currently advise on.
+
 ## Talk to a Licensed Advisor
 
 Owning property in Dubai as a foreign buyer is straightforward. Choosing the right property is the harder part, and that is the part worth getting help with.
 
-Elite Global Properties is a RERA-registered brokerage in Business Bay. We give overseas and resident buyers private, direct-from-developer access to off-plan villas, townhouses and branded apartments across Dubai and Abu Dhabi. Advisory is available in English, French, Russian, Arabic and German.
+Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a [private, direct-from-developer route into Dubai property](https://eliteglobal-properties.com/). We give overseas and resident buyers private, direct-from-developer access to off-plan villas, townhouses and branded apartments across Dubai and Abu Dhabi. Advisory is available in English, French, Russian, Arabic and German.
 
 Tell us your budget and your goal. We reply with a tailored shortlist, current prices and payment plans, usually the same day. Start with our guide to [buying property in Dubai](https://eliteglobal-properties.com/buy-property-in-dubai.html), or browse the [current off-plan projects](https://eliteglobal-properties.com/projects.html) we are working on now.
 

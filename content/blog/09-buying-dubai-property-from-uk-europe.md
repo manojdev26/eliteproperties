@@ -62,7 +62,7 @@ Strong launches move quickly, and units in good positions go first. Reserving re
 
 A remote reservation typically involves a reservation form, passport copy and basic identity documents, and the booking deposit paid into the developer's escrow account. Forms can generally be signed electronically.
 
-Before transferring anything, verify the escrow account details in your documentation, confirm the developer's permit number, and confirm the brokerage's own registration. We will never ask you to transfer funds to a personal account, and no licensed brokerage should. You can verify any Dubai brokerage on the [Dubai Land Department](https://dubailand.gov.ae/) licensed-brokers register, and our own RERA ORN, DED trade licence and Trakheesi permit numbers are published on our [about page](https://eliteglobal-properties.com/about.html).
+Before transferring anything, verify the escrow account details in your documentation, confirm the developer's permit number, and confirm the brokerage's own registration. We will never ask you to transfer funds to a personal account, and no licensed brokerage should. You can verify any Dubai brokerage on the Dubai Land Department licensed-brokers register, and our own RERA ORN, DED trade licence and Trakheesi permit numbers are published on our [about page](https://eliteglobal-properties.com/about.html).
 
 ## Step Four: Payments From Abroad
 
@@ -130,11 +130,14 @@ You can travel for handover, appoint a representative, or instruct a professiona
 ### Can I let the property from abroad?
 Yes. A property management company can handle tenants, maintenance and renewals. Factor the management fee into your net yield calculation from the start.
 
+
+If you are working through the detail, our guide to [how to verify a developer and broker](https://eliteglobal-properties.com/blog/verify-dubai-property-developer.html) is the natural next read, and you can see the full [current off-plan projects](/projects.html) we currently advise on.
+
 ## Buy With One Advisor From First Call to Handover
 
 Buying remotely works when someone competent owns the details. A single dedicated advisor handles the paperwork and document collection from abroad, from first enquiry to handover. You deal with someone who knows your file, not a call centre.
 
-Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, working directly with developers including Beyond, Emaar, Sobha Realty and Aldar. Advisory is available in English, French, Russian, Arabic and German.
+Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a [private, direct-from-developer route into Dubai property](https://eliteglobal-properties.com/). working directly with developers including Beyond, Emaar, Sobha Realty and Aldar. Advisory is available in English, French, Russian, Arabic and German.
 
 Tell us your budget, your timeline and where you are buying from. We reply with a tailored shortlist, current developer-confirmed prices and payment plans, usually the same day.
 
@@ -178,3 +181,4 @@ Tell us your budget, your timeline and where you are buying from. We reply with 
 - [x] No invented statistics
 - [x] No em dashes
 - [x] CTA to contact Elite Global Properties
+

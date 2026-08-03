@@ -34,7 +34,7 @@ The DLD levies a registration fee on property transfers, calculated on the prope
 
 For off-plan purchases the registration is recorded through the Oqood system, which registers your interest in the unit before the building is complete and before a final title deed is issued.
 
-Because official fee structures are set by the authorities and periodically reviewed, we confirm the exact figure applicable to your purchase in writing rather than quoting a percentage that may age badly. Current fee schedules are published by the [Dubai Land Department](https://dubailand.gov.ae/).
+Because official fee structures are set by the authorities and periodically reviewed, we confirm the exact figure applicable to your purchase in writing rather than quoting a percentage that may age badly. Current fee schedules are published by the Dubai Land Department.
 
 ### Registration trustee and admin fees
 
@@ -138,11 +138,14 @@ Oqood is the system used to register off-plan purchases before completion, recor
 ### Is a lawyer required to buy property in Dubai?
 Not mandatory. Many buyers proceed without one, particularly on straightforward off-plan purchases, though independent legal review is sensible for corporate structures or complex circumstances.
 
+
+If you are working through the detail, our guide to [who can buy in Dubai](https://eliteglobal-properties.com/blog/buy-property-in-dubai-as-a-foreigner.html) is the natural next read, and you can see the full [off-plan property in Dubai](/off-plan-property-in-dubai.html) we currently advise on.
+
 ## Get a Written Cost Breakdown
 
 Every figure that affects your budget should be confirmed in writing before you commit anything. That is a reasonable thing to ask for, and any licensed brokerage should provide it without hesitation.
 
-Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai. Our licence details are published in full on our [about page](https://eliteglobal-properties.com/about.html), so you can verify us independently before we discuss numbers.
+Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a [private, direct-from-developer route into Dubai property](https://eliteglobal-properties.com/). Our licence details are published in full on our [about page](https://eliteglobal-properties.com/about.html), so you can verify us independently before we discuss numbers.
 
 Tell us your budget and your goal, and we will reply with a tailored shortlist, current developer-confirmed prices, payment plans and the costs that go with them, usually the same day. If you are still weighing off-plan against a finished unit, start with our [off-plan property guide](https://eliteglobal-properties.com/off-plan-property-in-dubai.html), or see what is currently available on our [projects page](https://eliteglobal-properties.com/projects.html).
 

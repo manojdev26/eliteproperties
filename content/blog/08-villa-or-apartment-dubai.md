@@ -132,11 +132,14 @@ Eligibility depends on the property value meeting the qualifying investment leve
 ### Should a first-time Dubai buyer choose an apartment?
 Apartments are the more common entry point because of lower prices and simpler management. If you are relocating a family and plan to hold long term, a townhouse or villa may fit better from the start.
 
+
+If you are working through the detail, our guide to [which community suits you](https://eliteglobal-properties.com/blog/best-areas-to-buy-property-in-dubai.html) is the natural next read, and you can see the full [villas and townhouses in Dubai](/villas-and-townhouses-in-dubai.html) we currently advise on.
+
 ## Talk It Through With an Advisor
 
 Twenty minutes spent defining what you want the property to do saves months of comparing the wrong things. That conversation is where we start.
 
-Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, with direct-from-developer access to villas, townhouses and branded apartments across Dubai and Abu Dhabi. Advisory is available in English, French, Russian, Arabic and German.
+Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a [private, direct-from-developer route into Dubai property](https://eliteglobal-properties.com/). with direct-from-developer access to villas, townhouses and branded apartments across Dubai and Abu Dhabi. Advisory is available in English, French, Russian, Arabic and German.
 
 Tell us your budget, your timeline and whether you will live in it. We reply with a tailored shortlist, current prices and payment plans, usually the same day.
 

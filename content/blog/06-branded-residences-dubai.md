@@ -128,11 +128,14 @@ The branded residences we present are freehold, so foreign investors can own the
 ### Is a branded residence a good first Dubai purchase?
 It can be, particularly for buyers who want turnkey quality and a recognisable asset. If maximum net yield is your objective, compare it honestly against unbranded alternatives first.
 
+
+If you are working through the detail, our guide to [run the net yield calculation](https://eliteglobal-properties.com/blog/dubai-rental-yield-roi-guide.html) is the natural next read, and you can see the full [apartments for sale in Dubai](/apartments-for-sale-in-dubai.html) we currently advise on.
+
 ## Compare Branded Options With an Advisor
 
 The branded question comes down to whether you will use what you are paying for, and whether the specific brand and address will still command a premium when you exit.
 
-Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai. We keep our list deliberately short, and every development on it is one we would consider buying ourselves. Candid guidance on off-plan, yield and resale, with the numbers before the brochure.
+Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a [private, direct-from-developer route into Dubai property](https://eliteglobal-properties.com/). We keep our list deliberately short, and every development on it is one we would consider buying ourselves. Candid guidance on off-plan, yield and resale, with the numbers before the brochure.
 
 Tell us your budget and your goal. We reply with a tailored shortlist, current developer-confirmed prices and payment plans, usually the same day.
 

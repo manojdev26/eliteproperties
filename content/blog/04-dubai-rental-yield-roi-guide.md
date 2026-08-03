@@ -146,11 +146,14 @@ Short-term letting requires the appropriate permit, and individual buildings or 
 ### Should I choose an apartment or a villa for rental yield?
 Apartments generally show higher gross yields, while villas often attract longer tenancies and different demand. The right answer depends on your budget, horizon and appetite for management.
 
+
+If you are working through the detail, our guide to [choosing between a villa and an apartment](https://eliteglobal-properties.com/blog/villa-or-apartment-dubai.html) is the natural next read, and you can see the full [Dubai real estate investment](/dubai-real-estate-investment.html) we currently advise on.
+
 ## Run Your Numbers With an Advisor
 
 Yield is arithmetic, and the arithmetic only works with accurate inputs. Getting a verified service charge and a realistic rent for the exact unit is worth more than any general market figure.
 
-Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai. We give candid, building-by-building guidance so you invest on facts, not a brochure. Returns depend on the market and are not guaranteed, and we will not pretend otherwise.
+Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a [private, direct-from-developer route into Dubai property](https://eliteglobal-properties.com/). We give candid, building-by-building guidance so you invest on facts, not a brochure. Returns depend on the market and are not guaranteed, and we will not pretend otherwise.
 
 Tell us your budget and your goal. We will reply with a tailored shortlist, current developer-confirmed prices and payment plans, usually the same day.
 

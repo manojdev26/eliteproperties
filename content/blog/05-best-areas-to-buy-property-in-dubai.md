@@ -134,11 +134,14 @@ Established communities offer proven demand and less uncertainty. Emerging ones 
 ### How do I check what will be built near my property?
 Review the masterplan for the surrounding plots before you buy, particularly where a view supports the price. We walk clients through this as part of the shortlist.
 
+
+If you are working through the detail, our guide to [whether a branded residence is worth the premium](https://eliteglobal-properties.com/blog/branded-residences-dubai.html) is the natural next read, and you can see the full [current off-plan projects](/projects.html) we currently advise on.
+
 ## Get a Shortlist Built Around Your Goal
 
 The right community is the one that matches what you want the property to do. That conversation takes twenty minutes and saves a great deal afterwards.
 
-Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, with direct-from-developer access to launches from Beyond, Emaar, Sobha Realty and Aldar. Advisory is available in English, French, Russian, Arabic and German.
+Elite Global Properties is a RERA-registered brokerage in Business Bay, Dubai, giving overseas and resident buyers a [private, direct-from-developer route into Dubai property](https://eliteglobal-properties.com/). with direct-from-developer access to launches from Beyond, Emaar, Sobha Realty and Aldar. Advisory is available in English, French, Russian, Arabic and German.
 
 Tell us your budget and your goal. We reply with a tailored shortlist, current prices and payment plans, usually the same day.
 
