@@ -25,12 +25,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # point at the same English blog, so the label stays "Blog" (it reads the same
 # in these languages) but the anchor is marked as an English destination.
 LOCALES = {
-    "": ("Blog", ""),
-    "fr": ("Blog", ' hreflang="en" lang="en"'),
-    "de": ("Blog", ' hreflang="en" lang="en"'),
-    "ru": ("Блог", ' hreflang="en" lang="en"'),
-    "ar": ("المدونة", ' hreflang="en" lang="en"'),
-    "es": ("Blog", ' hreflang="en" lang="en"'),
+    "": ("Blogs", ""),
+    "fr": ("Blogs", ' hreflang="en" lang="en"'),
+    "de": ("Blogs", ' hreflang="en" lang="en"'),
+    "ru": ("Блоги", ' hreflang="en" lang="en"'),
+    "ar": ("المدونات", ' hreflang="en" lang="en"'),
+    "es": ("Blogs", ' hreflang="en" lang="en"'),
 }
 
 # The footer Discover column ends with the apartments link on every page.
