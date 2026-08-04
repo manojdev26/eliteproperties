@@ -72,7 +72,7 @@ export default async function handler(req, res) {
       });
       if (!r.ok) throw new Error('webhook_' + r.status);
       delivered = true;
-    } else if (process.env.RESEND_API_KEY && process.env.LEAD_TO_EMAIL) {
+    } else if (process.env.RESEND_API_KEY && process.env.LEAD_TO_EMAIL && process.env.LEAD_FROM_EMAIL) {
       const rows = Object.entries(lead)
         .filter(([, v]) => v)
         .map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0;color:#666">${k}</td><td><b>${escapeHtml(v)}</b></td></tr>`)
@@ -84,23 +84,38 @@ export default async function handler(req, res) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          from: process.env.LEAD_FROM_EMAIL || 'Elite Global Website <onboarding@resend.dev>',
+          // Must be an address on a domain verified in Resend (eliteglobal-properties.com).
+          // The resend.dev sandbox sender is deliberately NOT used as a fallback: it only
+          // delivers to the Resend account owner and silently drops mail to everyone else,
+          // which is what previously lost leads addressed to info@eliteglobal.ae.
+          from: process.env.LEAD_FROM_EMAIL,
+          reply_to: lead.email || undefined,
           // LEAD_TO_EMAIL may be a comma-separated list; every address receives the lead.
           to: process.env.LEAD_TO_EMAIL.split(',').map((e) => e.trim()).filter(Boolean),
           subject: `New website lead: ${name} (${phone})`,
           html: `<h2 style="font-family:Georgia,serif">New enquiry from eliteglobal-properties.com</h2><table style="font:14px/1.6 Arial">${rows}</table>`,
         }),
       });
-      if (!r.ok) throw new Error('resend_' + r.status);
+      if (!r.ok) {
+        // Log the provider's reason (bad key, unverified sender, rejected recipient)
+        // so a broken channel is visible in Vercel logs instead of failing silently.
+        const detail = await r.text().catch(() => '');
+        console.error('[lead] resend rejected', r.status, detail, 'to=', process.env.LEAD_TO_EMAIL);
+        throw new Error('resend_' + r.status);
+      }
       delivered = true;
     }
 
     if (!delivered) {
       // No channel configured: do not report success (would fire a false conversion).
+      console.error('[lead] no delivery channel configured — need RESEND_API_KEY + LEAD_TO_EMAIL + LEAD_FROM_EMAIL');
       return res.status(500).json({ ok: false, error: 'delivery_not_configured' });
     }
     return res.status(200).json({ ok: true });
   } catch (err) {
+    console.error('[lead] delivery failed', err && err.message, JSON.stringify(lead));
+    // The full lead is logged above, so the enquiry is recoverable from Vercel
+    // logs even when the email channel is down.
     return res.status(502).json({ ok: false, error: 'delivery_failed' });
   }
 }
