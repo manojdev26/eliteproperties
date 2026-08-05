@@ -87,7 +87,7 @@ export default async function handler(req, res) {
           // Must be an address on a domain verified in Resend (eliteglobal-properties.com).
           // The resend.dev sandbox sender is deliberately NOT used as a fallback: it only
           // delivers to the Resend account owner and silently drops mail to everyone else,
-          // which is what previously lost leads addressed to info@eliteglobal.ae.
+          // which is what previously lost leads addressed to info@eliteglobal-properties.com.
           from: process.env.LEAD_FROM_EMAIL,
           reply_to: lead.email || undefined,
           // LEAD_TO_EMAIL may be a comma-separated list; every address receives the lead.
