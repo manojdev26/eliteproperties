@@ -61,6 +61,29 @@
     d.addEventListener('toggle',function(){ if(d.open) closeMenu(); });
   });
 
+  /* --- Remember a manual language choice -------------------------------------
+     Required by the automatic language routing in /middleware.js. Without it a
+     visitor auto-sent to, say, /fr/ could never get back: clicking English goes
+     to "/", the middleware re-reads their French browser setting and returns
+     them to /fr/ again. Writing the cookie the middleware checks (it is read
+     BEFORE Accept-Language) makes a deliberate choice stick for a year.
+     Delegated so it survives any re-render, and it reads the hreflang already
+     on the switcher anchors, so no page markup had to change. --- */
+  (function(){
+    var LANGS=['en','fr','de','es','ru','ar','it','pt'];
+    document.addEventListener('click',function(e){
+      var a=e.target.closest && e.target.closest('a[hreflang]');
+      if(!a) return;
+      /* The footer blog link also carries hreflang="en". It is a link to an
+         English article, not a request to browse the site in English. */
+      var href=a.getAttribute('href')||'';
+      if(href.indexOf('/blog')===0) return;
+      var lang=(a.getAttribute('hreflang')||'').toLowerCase();
+      if(LANGS.indexOf(lang)===-1) return;
+      document.cookie='egp_lang='+lang+';path=/;max-age=31536000;samesite=lax'+(location.protocol==='https:'?';secure':'');
+    },{passive:true});
+  })();
+
   /* --- Reveal on scroll (with failsafe so content is never left invisible) --- */
   var reveals=document.querySelectorAll('.reveal');
   function revealAll(){ reveals.forEach(function(el){el.classList.add('in');}); }
