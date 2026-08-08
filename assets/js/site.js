@@ -71,6 +71,40 @@
     setTimeout(function(){ if(!document.querySelector('.reveal.in')) revealAll(); },1600);
   } else { revealAll(); }
 
+  /* --- Phone field: country code follows the PAGE, not the visitor ------------
+     The dial code shown is the one for the language/region page being viewed
+     (data-dial-default in the markup: pt -> +351, it -> +39, fr -> +33, and so
+     on). It is deliberately NOT geo-detected from the visitor's device: a
+     Portuguese page must show +351 even when read from India, otherwise the
+     visitor is prompted for the wrong country's number.
+
+     The placeholder itself is already correct in the HTML, so nothing here
+     changes what is displayed. This only makes sure the code is actually
+     PRESENT on the submitted number when someone types a local number, so the
+     sales team always receives a dialable international number. --- */
+  function pagePhoneDial(form){
+    var el=form && form.querySelector('input[name="phone"][data-dial-default]');
+    return el ? el.getAttribute('data-dial-default') : '';
+  }
+  /* National trunk prefix that must be dropped when converting a locally
+     written number to international form. Italy is the deliberate exception:
+     Italian landlines keep their leading 0 internationally (+39 06 ...), and
+     Italian mobiles never carry one, so nothing is stripped there. */
+  var TRUNK={'+44':'0','+33':'0','+49':'0','+34':'','+351':'0','+39':'','+7':'8','+971':'0','+1':''};
+  function toInternational(raw, dial){
+    var v=String(raw||'').trim();
+    if(!v || !dial) return v;
+    if(v.charAt(0)==='+') return v;                    /* already international */
+    var digits=v.replace(/[^\d]/g,'');
+    if(!digits) return v;                              /* nothing usable, leave alone */
+    if(v.indexOf('00')===0) return '+'+digits.replace(/^00/,'');
+    var cc=dial.replace(/[^\d]/g,'');
+    if(digits.indexOf(cc)===0) return '+'+digits;      /* code typed without the plus */
+    var trunk=TRUNK[dial];
+    if(trunk && digits.indexOf(trunk)===0) digits=digits.slice(trunk.length);
+    return dial+digits;
+  }
+
   /* --- Capture gclid / gbraid / wbraid + referrer into hidden fields --- */
   var qp=new URLSearchParams(location.search);
   ['gclid','gbraid','wbraid'].forEach(function(k){
@@ -88,6 +122,12 @@
       var hp=form.querySelector('input[name="company_website"]'); // honeypot
       if(hp && hp.value) return;                                   // silently drop bots
       if(!form.checkValidity()){ form.reportValidity(); return; }  // enforce required fields (form is novalidate for styling)
+      // Normalise the phone to international form using THIS page's country
+      // code, so someone who typed only their local number still reaches us as
+      // a dialable number. Runs before FormData so both the POST and the
+      // WhatsApp fallback below carry the same corrected value.
+      var phoneEl=form.querySelector('input[name="phone"][data-dial-default]');
+      if(phoneEl && phoneEl.value) phoneEl.value=toInternational(phoneEl.value, pagePhoneDial(form));
       var btn=form.querySelector('[type=submit]');
       var okBox=form.querySelector('.form-msg.ok'), errBox=form.querySelector('.form-msg.err');
       if(errBox) errBox.hidden=true;
